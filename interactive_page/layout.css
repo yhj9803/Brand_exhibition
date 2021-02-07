@@ -1,0 +1,572 @@
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin:0;
+}
+#navGnb {
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+}
+#navSnb {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    
+    display: none;
+}
+/*  사용  전*/
+
+#wrapper {
+    position: relative;
+    left:0;
+    right:0;
+    
+    display:block;
+    width:100vw;
+    max-width: 1920px;
+    height:100vh;
+    margin:0;
+    padding:0;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+} /*wrap 역할 수행*/
+
+#header {
+    position: absolute;
+    top:0;
+    left:0;
+
+    display: inline-block;
+    width: 100%;
+    height:15%; /* 중요*/
+}
+
+/*                                 trigger                                 */
+#trigger_area button {
+    padding:0;
+    margin:0;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+#trigger_area { 
+    position: absolute;
+    z-index: 2000;
+    
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.trigger_logo_area {
+    position: absolute;
+    left:8%;
+    top:26%;
+}
+.trigger_logo {
+    position: relative;
+
+    width:140px;
+    height:36px;
+
+    background-image: url(./image/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.trigger_text_area {
+   position: absolute;
+    left:10%;
+    top:26%;
+
+}
+.trigger_text {
+   position: relative;
+   z-index:2000;
+   
+   width:132px;                                /*logo trigger 크기 조정*/
+   height:34px;
+
+    background-image: url(./image/logo_onlyText.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*45-13.19 = */
+
+.trigger_character_area {
+    position: fixed;
+    top:69%;                                     /*character trigger 위치*/
+    left:6%;                                             /*trigger area 와 동일 */
+    
+    display: inline;
+}
+.trigger_character {
+    position: relative;
+    z-index: 2000;
+
+    width:75px;                               /*character trigger 크기,    변경 시 trigger_text_area의 left 도 수정*/
+    height:72px;
+    
+    background-image:url("image/logo_square.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}    
+
+
+
+/*                                 trigger                                 */
+
+
+/*                                 gnb                                                                                */
+
+.gnb {
+    position: relative;
+    top:0;
+    left:0;
+    
+
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.service_area {
+    position: relative;
+    top:17.9%;
+    left:0;
+    
+    display: inline-block;
+    width: 100%;
+    height:82.1%;
+}
+.service_area a {
+    position: relative;
+    left:29.8%;
+
+    margin-right:6.6667%;
+    
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+.link_brand {
+
+}
+.link_upcomming {
+
+}
+.link_atelier {
+
+}
+
+.service_area a::before {
+    content: "";
+
+    position: relative;
+    top: 8%;
+    right:1.32%;
+
+    display: inline-block;
+    box-sizing: border-box;
+    height: 36px;
+    border: rgb(63, 63, 63) 0.5px solid;
+    border-radius: 0.5px;
+
+    background-color: rgb(63, 63, 63);
+    color: rgb(63, 63, 63);
+}
+
+.account_btn {
+    position:absolute;
+    top:17.5px;
+    right:16.875%;
+
+
+
+
+
+    border:rgba(0, 0, 0, 0) 0;
+
+
+
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+
+/*                                 btn                                 */
+.open_menu_btn {
+    position: fixed;
+    left: 3.3%;
+    top: 4.2%;
+    z-index: 2000;
+
+    display: inline-block;
+    width:1.927%;
+    padding: 0;
+    border:rgba(0, 0, 0, 0) 0;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.btn_shape {
+    position:relative;
+    left:0;
+
+    display: block;
+    box-sizing: border-box;
+    height: 5px;
+    margin: 5px;
+    border:rgba(63, 63, 63, 0.8) 2px solid;
+    border-radius: 20%;
+    background-color: rgba(63, 63, 63, 0.8);
+}
+/*                                 btn                                 */
+
+/*                                 global_menu                                 */
+
+.nav_gnb {
+    position: relative;
+    top:0;
+    left:0;
+    bottom:0;
+    z-index: 3000;
+
+    display: inline-block;
+    width:10%;
+    height:100%;
+    background-color:rgba(4, 4, 4, 0.9);
+}
+.close_menu_btn {
+    position:absolute;
+    right:13%;
+    top:2%;
+
+    display: inline;
+    
+    margin: 0;
+    padding: 0;
+    border:rgba(0, 0, 0, 0) 0;
+    background-color: rgba(0, 0, 0, 0);
+
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+/*                                 global_menu                                 */
+
+
+/*                                                                      gnb                                                                    */
+#container {
+    position: relative;
+    top:15%; /*중요*/
+    left:0;
+    right:0;
+
+    display: inline-block;
+    width: 100%;
+    height:75%;                                         /*컨테이너 크기*/
+
+    overflow: hidden;                                  /*애니메이션 연출 위함*/
+}
+#footer {
+    position: relative;
+    top:15%;
+    left:0;
+    right:0;
+    
+    display: inline-block;
+    width: 100%;
+    height:10%;
+}
+
+#phaise1 {
+    position: absolute;
+    z-index:1; /*겹치는 순간 페이즈 2 위에 위치하기 위함*/
+}
+#phaise2 {
+    position: relative;
+}
+
+.phaise {
+    left:0;
+
+    display: inline-block;
+    width: 100%;
+    height:100%;
+}
+
+/*                                 banner                                 */
+
+.spot {
+    position: relative;
+    top:10%;
+
+    display: inline-block;
+    width: 100%;
+    height: 80%;
+
+    overflow: hidden;
+}
+
+.wall {
+    position: absolute;
+
+    margin:auto;
+    height:100%;
+
+}
+
+.wall img {
+
+
+    margin: auto;
+    height: 100%;
+    width:100%;
+
+}
+
+.banner_box {
+    position: relative;
+    top:0;
+
+
+    display: block;
+    margin:auto;
+    width:90%;
+    height:100%;
+    overflow:hidden;
+
+    white-space: nowrap;
+
+    background-color: aliceblue;
+}
+
+.image_box {
+    position:relative;
+    top:0;
+    left:0;
+
+    display: inline-block;
+    height: 100%;
+
+    border:  red 2px solid;
+}
+.image_box img {
+    height: 100%;
+}
+
+.text_box {
+    position: relative;
+    left:-9%;
+    top:0;
+
+    display:inline-block;
+    height:100%;
+    width:100%;
+}
+
+.banner_blur {
+    width:100%;
+    height: 100%;
+
+    backdrop-filter: blur(26px);
+    background-image: url(image/text_background.png);
+}
+.banner_text {
+    position: absolute;
+
+    width:100%;
+    height:100%;
+    padding-top: 9vh;
+    padding-left: 9vh;
+
+    box-sizing: border-box;
+
+    font-size:x-large;
+
+}
+
+
+
+/*                                 banner                                 */
+
+
+
+
+
+
+/*                                 carousel                                                                               */
+
+.main_carousel_box {
+
+}
+
+
+
+
+
+
+
+
+
+
+/*                                 carousel                                                                               */
+.phaise_2 {
+    display: none;
+}
+.write_phaise_2 {
+    display:inline-block;
+}
+.logo {
+    display: none;
+    opacity: 0;
+}
+.write_logo {
+    display:block;
+}
+
+
+.move_character {
+    animation-name: MoveCharacter;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+@keyframes MoveCharacter {
+    from{
+        top:650px;
+    }
+    to{
+        top:40px;
+    }
+}
+.move_phaise_1 {
+    animation-name: MovePhaise_1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes MovePhaise_1 {
+    from{
+        bottom:0;
+    }
+    to{
+        bottom:100%;
+    }
+}
+
+
+.hide_character {
+    animation-name: HideCharacter;
+    animation-duration: 1s;
+
+}
+@keyframes HideCharacter {
+    from{
+        opacity: 1;
+        top:40px;
+    }
+    to{
+        opacity: 0;
+        top:40px;
+    }
+}
+.hide_text {
+    animation-name: HideText;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes HideText {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.erase_character {
+    display:none;
+}
+.erase_text {
+    display:none;
+}
+.erase_phaise_1 {
+    display: none;
+}
+
+.paint_logo {
+    animation-name: PaintLogo;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes PaintLogo {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*의미상 구분을 확실히 하기 위해 paint와 write, hide와 erase 로 구분하였음.*/
+
+.nav_gnb {
+    width:0%;
+}
+
+.hide_open_menu_btn {
+    display:none;
+}
+
+.open_menu {
+    animation-name: OpenMenu;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes OpenMenu {
+    from { width:0% ;}
+    to {width:10%;}
+}
+
+.close_menu {
+    animation-name: CloseMenu;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes CloseMenu {
+    from { width:10%;}
+    to {width:0%;}
+}
+
+
+@media screen and (min-width: 1921px) {
+    #wrapper {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .trigger_character_area {
+        position: absolute;
+        left: 115.2px;
+    }
+}
+@media screen and (min-height: 1081px) {
+    .trigger_character_area {
+        position:absolute;
+        top:745.2px;
+    }
+    .spot {
+        height:648px;
+    }
+}

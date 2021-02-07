@@ -1,0 +1,374 @@
+@keyframes menuAnimationOn {
+    from { width:0% ;}
+    to {width:230px;}
+}
+@keyframes menuAnimationExit {
+    from { width:230px ;}
+    to {width:0%;}
+}
+li {
+    list-style: none;
+}
+body {
+    background:#F8F8F8 0% 0% no-repeat padding-box;
+    position: fixed;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 1400px;
+}
+#global_menu_area{
+    position: fixed;
+    z-index: 2000;
+    left:0;
+    top:0;
+    bottom:0;
+}
+.global_menu_area{
+    width:0;
+}
+
+.exit_menu {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 10px auto;
+}
+.exit_menu .exit_menu_btn {
+    margin-right: 10px;
+    margin-left: auto;
+    display: block;
+    
+}
+
+#global_menu_area .link_area {
+    overflow: hidden;
+}
+
+#global_menu_area .category_list {
+    list-style: none;
+}
+
+/*-----여기까지 메뉴 style영역-----*/
+
+#wrap {
+    position: relative;   
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+
+#header {
+    position: relative;
+    height: 136px;
+    
+}
+
+
+.gnb {
+    position: relative;
+    height: 100%;
+}
+
+.menu_btn_area {
+    position: fixed;
+    z-index: 2000;
+    top:20px;
+    left:20px;
+}
+.menu_btn {
+    display: block;
+}
+
+
+.main_logo_area {
+    position: relative;
+    height:100%; /* 부모가 relative 이므로 100분율이 부모의 height를 따름*/
+}
+
+
+#main_logo_img {
+    position: relative;
+    top: 40px;
+    left:118px; 
+    width: 56px;
+   height: 56px; 
+}
+
+
+
+.service_area {
+  position: absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  padding: 35px 0;
+  border: green 2px solid;
+}
+
+
+#category {
+  left:600px;
+}
+#about_us {
+
+}
+#account {
+
+}
+
+/* 팝업창              start*/
+
+.allPop {
+    position: absolute;
+    background-color:grey;
+    width:100%;
+    height:600px;
+    top:29%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+    margin:0;
+    padding:0;
+    z-index: 2000;
+    box-shadow: 0px 400px 50px #00000029;
+}
+.text_accent {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.category_text_area {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+.category_text_top {
+    margin: 0 auto;
+    font-size: large;
+    color: whitesmoke;
+    width: fit-content;
+    margin: auto;
+}
+
+.category_contents {
+    display: flex;
+}
+
+.category_contents li {
+
+    font-size: x-large;
+    color: whitesmoke;
+    margin:5px;
+}
+
+
+
+
+.hide_pop {
+    display: none;
+}
+.exit_pop {
+    z-index: 2000;
+    font-size: 20px;
+    width:40px;
+    height:40px;
+    top:30px;
+    right:30px;
+    background-color: rgba(0, 0, 0, 0);
+    border:0;
+    font-weight: bold;
+}
+
+#exit_category_pop {
+    position: absolute;
+    display: inline-block;
+}
+.show_category_pop {
+    display:inline-block;
+}
+
+#exit_about_us_pop {
+    position: absolute;
+    display: inline-block;
+}
+
+.show_about_us_pop {
+    display:inline-block;
+}
+#exit_account_pop {
+    position: absolute;
+    display: inline-block;
+}
+
+.show_account_pop {
+    display:inline-block;
+}
+/*팝업창     end*/
+
+#category{
+    left:600px;
+}
+#about_us {
+  left:700px;
+}
+
+#account {
+  left:800px;
+}
+
+#sign_in {
+    left:1100px;
+}
+
+#sign_up {
+    left:1150px;
+}
+
+
+.service_nav {
+  position: relative;
+  display: inline-block;
+  width:120px;
+  height:38px;
+}
+
+.line {
+  position: relative;
+  display: inline-block;
+  width:0;
+  height:36px;
+  background-color: gray;
+  border: 1px solid gray;
+  border-radius: 1px;
+}
+.nav_btn_area {
+  position: absolute;
+  top:0;
+  right:0; 
+  display: block;
+  height:38px;
+   z-index:200;
+   border:0px;
+   border-color: rgba(0, 0, 0, 0);
+}
+.nav_btn {
+  display: block;
+  height: 36px;
+  width:100px;
+  opacity:1;
+  font-size: 19px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  border:0px;
+  border-color: rgba(0, 0, 0, 0);
+}
+#account_btn {
+    
+}
+#brochure_btn {
+    
+}
+
+
+
+#container {
+    position: relative;
+    width:100%; /*부모가 relative이므로 부모의 width를 따라 백분율 산정*/
+    
+}
+#spot {
+    position: relative;
+}
+.main_area {
+    position: relative;
+}
+
+.main_texture{
+  width: 100%;
+  height: 730px;
+}
+
+.main_banner {
+    display: inline-block;
+    position: absolute;
+    width: 1674px;
+    height: 777px;
+    top: -24px;
+    left: 120px;
+    box-shadow: 0px 24px 50px #00000029;
+}
+
+.fade_slide {
+    display: inline-block;
+    height: 100%;
+    
+}
+
+.fade_slide ul {
+    position: relative;
+    height:inherit;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.fade_slide ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.fade_slide ul li img{
+    object-fit: contain;
+}
+
+
+
+#main_text {
+    top:0;
+    right: 0;
+    width: 837px;
+    height: 100%;
+    z-index: 200;
+    position: absolute;
+    background-image: url(image/text_background.png);
+    backdrop-filter: blur(26px);
+}
+
+
+.text_position {
+    position:absolute;
+    left:80px;
+    top:85px;
+    font-size:xx-large
+}
+
+
+.menu_btn_hide {
+    display:none;
+}
+
+.global_menu_action{
+    animation-name: menuAnimationOn;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+.menu_area_exit {
+    animation-name: menuAnimationExit;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+
+.menu_btn_area {
+    display: none;
+}
