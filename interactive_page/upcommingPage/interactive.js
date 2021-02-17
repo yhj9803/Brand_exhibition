@@ -10,64 +10,28 @@ const menuOpenBtn = document.querySelector(".open_menu_btn");
 const menuCloseBtn = document.querySelector(".close_menu_btn");
 const menu = document.querySelector(".nav_gnb");
 /* */ 
-const loginBtn = document.querySelector(".login_btn");
-const closeLogin = document.querySelector(".close_login_btn");
-const loginPop = document.querySelector(".login_pop");
-
-function Click () {alert("click")};
-function closeLoginPop() {
-    Click();
-    loginPop.classList.remove("open_login_pop");
-}
-function openLoginPop() {
-    Click();
-    loginPop.classList.add("open_login_pop");
-    closeLogin.addEventListener("click", closeLoginPop);
-}
-loginBtn.addEventListener("click", openLoginPop);
-/* */
 var activeBrandName = document.querySelector(".active_slide img");
 console.log(activeBrandName.getAttribute("alt"));
 console.log(typeof(activeBrandName.getAttribute("alt")));
 const brandName = document.querySelector("#brandName");
 brandName.innerText = activeBrandName.getAttribute("alt");
 console.log(brandName.innerText);
-/*                  */
+/* */
 
 const slide = document.querySelector(".slide");
 const slide1 = document.querySelector("#slide1");
 const slide2 = document.querySelector("#slide2");
 const slide3 = document.querySelector("#slide3");
-const slides = document.querySelectorAll(".banner_image_box .slide");
-console.log(slides);
-console.log(typeof(slides));
-let slideArr= [ ] ;
-console.log(slideArr);
-slideArr = Array.from(slides);
-console.log(slides);
-console.log(slideArr);
 
 
-
-function slideHandler() {
-    let handling = slideArr.shift();
-    slideArr[1].classList.remove("active_slide");
-    slideArr[2].classList.add("active_slide");
-    slideArr[4].classList.add("prepared_slide");
-    handling.classList.remove("prepared_slide");
-    slideArr.push(handling);
-
-    
-
+function slideHandler(){
+    slide1.classList.add("active_slide");
+    slide3.classList.remove("active_slide");
     activeBrandName = document.querySelector(".active_slide img");
     brandName.innerText = activeBrandName.getAttribute("alt");
 }
+setTimeout(slideHandler, 3000);
 
-setInterval(slideHandler, 8000);
-
-/*                      */
-
-/*                */
 function openMenu() {
     menuOpenBtn.classList.add("hide_open_menu_btn");
     menu.classList.add("open_menu");
@@ -109,8 +73,8 @@ function clickCharacter() {
     hideCharacter();
 
 
-    setTimeout(eraseCharacter, 5000);
-    setTimeout(erasePhaise_1, 5000);
+    setTimeout(eraseCharacter, 3000);
+    setTimeout(erasePhaise_1, 3000);
 
 }
 

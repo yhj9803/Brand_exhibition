@@ -4,21 +4,29 @@
         overflow-y: auto;
         margin: 0;
     }
+    
     .box {
-        position: absolute;
         z-index: 1000;
-
-        width: 100%;
+        position: absolute;
+        margin-left: 6.40625%;
+        top: 2.307%;
+        width: 87.185%;
         height: 30px;
-
         background: url('image/texture2.png');
         box-shadow: 0px 3px 5px #00000029;
+        border-radius: 12px;
     }
-    .box_top {
-        top: 2.307%;
-    }
-    .box_bottom {
+    
+    .box2 {
+        z-index: 1000;
+        position: absolute;
+        margin-left: 6.40625%;
         top: 74.538%;
+        width: 87.185%;
+        height: 30px;
+        background: url('image/texture2.png');
+        box-shadow: 0px 3px 5px #00000029;
+        border-radius: 12px;
     }
     
     #navGnb {
@@ -35,73 +43,7 @@
         bottom: 0;
         display: none;
     }
-
-    .login_pop {
-        position: fixed;
-        top: 30%;
-        right: 50%;
-        z-index: 3000;
-
-        display: none;
-        width: 40%;
-        height: 50%;
-        transform: translate(50%, -35%);
-        background-color: rgba(210, 210, 210, 0.8);
-        border-radius: 2%;
-    }
-    .close_login_btn {
-        position: absolute;
-        right: 2%;
-        top: 2%;
-        display: inline;
-        margin: 0;
-        padding: 0;
-        border: rgba(0, 0, 0, 0) 0;
-        background-color: rgba(0, 0, 0, 0);
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 35px;
-        font-weight: bold;
-    }
-    .log_in_area {
-        position: absolute;
-        top:30%;
-        left:50%;
-        transform: translate(-50%, 10%);
-        display: inline-block;
-        width:40%;
-        height: 10%;
-    }
-    .id_box {
-        position: relative;
-        top: 0;
-        
-        display: block;
-        width: 70%;
-        margin: auto;
-    
-    }
-    .pwd_box {
-        position: relative;
-        top: 15%;
-        
-        display: block;
-        width: 70%;
-        margin: auto;
-    
-    }
-    .login_submit {    
-        position: relative;
-        top:25%;
-
-        display: block;
-        width: 70%;
-        height: 54%;
-        margin: auto;
-    }
-    .open_login_pop {
-        display: inline-block;
-    }
-
+    /*  사용  전*/
     
     #wrapper {
         position: relative;
@@ -110,7 +52,7 @@
         display: block;
         width: 100vw;
         max-width: 1920px;
-        height: 100vh;
+        height: 120.3vh;
         margin: 0;
         padding: 0;
         overflow-x: hidden;
@@ -168,7 +110,7 @@
     
     .trigger_character_area {
         position: fixed;
-        top: 68%;
+        top: 80%;
         /*character trigger 위치*/
         right: 16%;
         /*trigger area 와 동일 */
@@ -184,7 +126,6 @@
         background-image: url("image/logo_square.png");
         background-size: contain;
         background-repeat: no-repeat;
-        cursor:pointer;
     }
     /*                                 trigger                                 */
     /*                                 gnb                                                                                */
@@ -239,22 +180,26 @@
         border: 1px solid #707070;
     }
     
-    .login_btn {
+    .sign_in_btn {
         position: absolute;
+        
         right: 10.8854%;
-        z-index: 2000;
-
-        width: 30px;
-        height: 30px;
         border: rgba(0, 0, 0, 0) 0;
-        background-color: rgba(0, 0, 0, 0);
-        background-image: url(./image/user.png);
-        background-size: cover;
-        cursor: pointer;
-
-        font-family: Myriad pro;
         font-size: 18px;
         color: rgb(63, 63, 63);
+        background-color: rgba(0, 0, 0, 0);
+        font-family: Myriad pro;
+    }
+    
+    .sign_out_btn {
+        position: absolute;
+        
+        right: 6.40625%;
+        border: rgba(0, 0, 0, 0) 0;
+        font-size: 18px;
+        color: rgb(63, 63, 63);
+        background-color: rgba(0, 0, 0, 0);
+        font-family: Myriad pro;
     }
     /*                                 btn                                 */
     
@@ -320,10 +265,10 @@
         right: 0;
         display: inline-block;
         width: 100%;
-        height: 93%;
+        height: 82%;
         /*컨테이너 크기*/
-        overflow-x:hidden;
-        overflow-y: auto;
+        overflow: hidden;
+        /*애니메이션 연출 위함*/
     }
     
     #footer {
@@ -397,25 +342,17 @@
         visibility: hidden;
 
         transition-property: all;
-        transition-duration: 4s;
-    }
-    .inactive_slide {
-        display: none;
-    }
-    .prepared_slide {
-        position:absolute;
-        
-        display: inline-block;
-        visibility: hidden;
-        opacity: 0;
+        transition-duration: 3s;
     }
     .active_slide {
         position: relative;
         z-index: 200;
 
-        visibility: visible;
         opacity: 1;
+        visibility: visible;
+
     }
+
     .slide_link {
         position: absolute;
         top:0;
@@ -439,10 +376,8 @@
         display: inline-block;
         height: 100%;
         width: 100%;
-
-        transition-property: all;
-        transition-duration: 2s;
     }
+    
     .banner_blur {
         width: 100%;
         height: 100%;
@@ -459,7 +394,6 @@
         box-sizing: border-box;
         font-size: x-large;
     }
-
     /*                                 banner                                 */
     /*                                 carousel                                                                               */
     
@@ -482,10 +416,10 @@
     
     @keyframes MovePhaise_1 {
         from {
-            left: 0;
+            bottom: 0;
         }
         to {
-            left: -100%;
+            bottom: 100%;
         }
     }
     
@@ -583,37 +517,16 @@
         }
         .trigger_character_area {
             position: absolute;
-            right: 192px;
-            top:734.391px;
+            left: 115.2px;
         }
     }
     
     @media screen and (min-height: 1081px) {
         .trigger_character_area {
             position: absolute;
-            right: 192px;
-            top: 734.391px;
+            top: 745.2px;
         }
         .spot {
-            height: 678.625px;
-            top:84.953px;
-        }
-        .box_top{
-            top:24.563px;
-        }
-        .box_bottom{
-            top:794.094px;
+            height: 648px;
         }
     }
-
-    /**/
-
-    @media screen and (max-height:428.1px) {
-
-    }
-    @media screen and (max-width:296.1px) {
-
-    }
-
-
-    /**/

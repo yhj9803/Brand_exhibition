@@ -13,45 +13,81 @@
 
     <div id="navGnb" class="nav_gnb" style="">
         <button class="close_menu_btn">X</button>
-
     </div>
+    <div class="login_pop">
+        <button class="close_login_btn">X</button>
+        <form name="login" action="" method="POST" autocomplete="on" class="log_in_area">
+            <input name="id" type="id"  placeholder="ID"class="id_box"></label>
+            <input name="pwd" type="password" placeholder="PASSWORD" autocomplete="off" class="pwd_box"></label>
+            <button type="submit" class="login_submit" ></button>
+        </form>
+    </div>
+
+
     <div id="navSnb" style=""></div>
     <div id="wrapper" style="">
         <div id="header" style="">
             <div id="trigger_area">
-                <div class="trigger_logo_area logo"><button class="trigger_logo"></button></div>
-                <div class="trigger_character_area"><button class="trigger_character"></button></div>
+                <div class="trigger_logo_area logo">
+                    <a href="./index.html" class="trigger_logo_link"></a>
+                    <img src="./image/logo.png" alt="logo">
+                </div>
+                <div class="trigger_character_area"><button class="trigger_character" type="button"></button></div>
             </div>
 
             <div class="gnb" style="">
-                <button class="open_menu_btn">
+                <button class="open_menu_btn" type=button>
                     <div class="btn_shape"></div>
                     <div class="btn_shape"></div>
                     <div class="btn_shape"></div>
                 </button>
                 <div class="service_area">
                     <a class="link_bar link_brand" href="">Category</a>
-                    <a class="link_bar link_upcomming" href="">Community</a>
+                    <a class="link_bar link_upcomming" href="./upcommingPage/index.html">Upcomming</a>
                     <a class="link_bar link_atelier" href="">Atelier</a>
-                    <button class="sign_in_btn">Sign In</button>
-                    <button class="sign_out_btn">Sign Out</button>
+                    <button class="login_btn" type="button"></button>
                 </div>
             </div>
         </div>
         <div id="container" style="background-color: aliceblue;">
+            <div class="box box_top"></div>
+            <div class="box box_bottom"></div>
             <div id="phaise1" class="phaise phaise_1" style="">
-                <div id="box" class="box" style=""></div>
-                <div id="box2" class="box2" style=""></div>
                 <div class="spot">
                     <div class="banner_box">
-                        <div class="image_box"><img src="./image/ho.jpg" alt=""></div>
-                        <div class="text_box">
+                        <div class="banner_image_box">
+                            <div id="slide0" class="slide inactive_slide prepared_slide">
+                                <img src="./image/np2.jpg" alt="Dior2">
+                                <a  class="slide_link" href=""></a>
+                            </div>
+                            <div id="slide1" class="slide inactive_slide prepared_slide">
+                                <img src="./image/np.jpg" alt="Dior3">
+                                <a  class="slide_link" href=""></a>
+                            </div>
+                            <div id="slide2" class="slide inactive_slide prepared_slide active_slide">
+                                <img src="./image/gd.jpg" alt="CHANEL">
+                                <a  class="slide_link" href=""></a>
+                            </div>
+                            <div id="slide3" class="slide inactive_slide prepared_slide">
+                                <img class="" src="./image/sz.jpg" alt="Dior">
+                                <a  class="slide_link" href=""></a>
+                            </div>
+                            <div id="slide4" class="slide inactive_slide prepared_slide">
+                                <img class="" src="./image/gd2.jpg" alt="CHANEL2">
+                                <a  class="slide_link" href=""></a>
+                            </div>
+                            <div id="slide5" class="slide inactive_slide">
+                                <img class="" src="./image/gd3.jpg" alt="CHANEL3">
+                                <a  class="slide_link" href=""></a>
+                            </div>
+                        </div>
+                        <div class="banner_text_box">
                             <div class="banner_blur">
                                 <div class="banner_text">
-                                    <span><bold><strong>Galley  </strong></bold>선정</span>
+                                    <span><bold><strong>Galley  </strong></bold>의</span>
                                     <h1>21년 2월의 브랜드</h1>
-                                    <div>패션 - 럭셔리(남성)</div>
-                                    <h2>CHANEL</h2>
+                                    <div>패션 - 럭셔리</div>
+                                    <h2 id="brandName" >CHANEL</h2>
                                 </div>
                             </div>
                         </div>
