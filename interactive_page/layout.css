@@ -4,294 +4,22 @@
         overflow-y: auto;
         margin: 0;
     }
-    .box {
-        position: absolute;
-        z-index: 1000;
-
-        width: 100%;
-        height: 30px;
-
-        background: url('image/texture2.png');
-        box-shadow: 0px 3px 5px #00000029;
-    }
-    .box_top {
-        top: 2.307%;
-    }
-    .box_bottom {
-        top: 74.538%;
-    }
     
+
+
+
+    
+/*            navGnb                                                                                   */   
     #navGnb {
         position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
     }
-    
-    #navSnb {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        display: none;
-    }
-
-    .login_pop {
-        position: fixed;
-        top: 30%;
-        right: 50%;
-        z-index: 3000;
-
-        display: none;
-        width: 40%;
-        height: 50%;
-        transform: translate(50%, -35%);
-        background-color: rgba(210, 210, 210, 0.8);
-        border-radius: 2%;
-    }
-    .close_login_btn {
-        position: absolute;
-        right: 2%;
-        top: 2%;
-        display: inline;
-        margin: 0;
-        padding: 0;
-        border: rgba(0, 0, 0, 0) 0;
-        background-color: rgba(0, 0, 0, 0);
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 35px;
-        font-weight: bold;
-    }
-    .log_in_area {
-        position: absolute;
-        top:30%;
-        left:50%;
-        transform: translate(-50%, 10%);
-        display: inline-block;
-        width:40%;
-        height: 10%;
-    }
-    .id_box {
-        position: relative;
-        top: 0;
-        
-        display: block;
-        width: 70%;
-        margin: auto;
-    
-    }
-    .pwd_box {
-        position: relative;
-        top: 15%;
-        
-        display: block;
-        width: 70%;
-        margin: auto;
-    
-    }
-    .login_submit {    
-        position: relative;
-        top:25%;
-
-        display: block;
-        width: 70%;
-        height: 54%;
-        margin: auto;
-    }
-    .open_login_pop {
-        display: inline-block;
-    }
-
-    
-    #wrapper {
-        position: relative;
-        left: 0;
-        right: 0;
-        display: block;
-        width: 100vw;
-        max-width: 1920px;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-    /*wrap 역할 수행*/
-    
-    #header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: inline-block;
-        width: 100%;
-        height: 10.307%;
-        /* 중요*/
-    }
-    /*                                 trigger                                 */
-    
-    #trigger_area button {
-        padding: 0;
-        margin: 0;
-        border-color: rgba(0, 0, 0, 0);
-        background-color: rgba(0, 0, 0, 0);
-    }
-    
-    #trigger_area {
-        position: absolute;
-        z-index: 2000;
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .trigger_logo_area {
-        position: absolute;
-        left: 6.40625%;
-        top: 37.313%;
-    }
-    
-    .trigger_logo_link {
-        position: absolute;
-
-        display: block;
-        width: 136px;
-        height: 34px;
- 
-    }
-    .trigger_logo_area img {
-        width: 136px;
-        height: 34px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    
-    
-    .trigger_character_area {
-        position: fixed;
-        top: 68%;
-        /*character trigger 위치*/
-        right: 16%;
-        /*trigger area 와 동일 */
-        display: inline;
-    }
-    
-    .trigger_character {
-        position: relative;
-        z-index: 2000;
-        width: 75px;
-        /*character trigger 크기,    변경 시 trigger_text_area의 left 도 수정*/
-        height: 72px;
-        background-image: url("image/logo_square.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        cursor:pointer;
-    }
-    /*                                 trigger                                 */
-    /*                                 gnb                                                                                */
-    
-    .gnb {
-        position: relative;
-        top: 0;
-        left: 0;
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .service_area {
-        position: relative; top: 30.918%;
-        left: 0;
-        display: inline-block;
-        width: 100%;
-        height: 82.1%;
-    }
-    
-    .service_area a {
-        position: relative;
-        z-index: 2000;
-        left: 28.6%;
-        margin-right: 8.95%;
-        
-        opacity: 1;
-        
-        text-decoration: none;
-        text-align: left;
-        font-family: Myriad pro;
-        font-size: 18px;
-        letter-spacing: 0.79px;
-        color: #262626;
-    }   
-    
-    .link_brand {}
-    
-    .link_upcomming {}
-    
-    .link_atelier {}
-    
-    .service_area a::before {
-        content: "";
-        position: absolute;
-        top: -30%;
-        right:130%;
-        display: inline-block;
-        box-sizing: border-box;
-        height: 30px;
-        border: 1px solid #707070;
-    }
-    
-    .login_btn {
-        position: absolute;
-        right: 10.8854%;
-        z-index: 2000;
-
-        width: 30px;
-        height: 30px;
-        border: rgba(0, 0, 0, 0) 0;
-        background-color: rgba(0, 0, 0, 0);
-        background-image: url(./image/user.png);
-        background-size: cover;
-        cursor: pointer;
-
-        font-family: Myriad pro;
-        font-size: 18px;
-        color: rgb(63, 63, 63);
-    }
-    /*                                 btn                                 */
-    
-    .open_menu_btn {
-        position: fixed;
-        left: 3.3%;
-        top: 4.2%;
-        z-index: 2000;
-        display: inline-block;
-        width: 1.927%;
-        padding: 0;
-        border: rgba(0, 0, 0, 0) 0;
-        background-color: rgba(0, 0, 0, 0);
-    }
-    
-    .btn_shape {
-        position: relative;
-        left: 0;
-        display: block;
-        box-sizing: border-box;
-        height: 5px;
-        margin: 5px;
-        border: rgba(63, 63, 63, 0.8) 2px solid;
-        border-radius: 20%;
-        background-color: rgba(63, 63, 63, 0.8);
-    }
-    /*                                 btn                                 */
-    /*                                 global_menu                                 */
-    
     .nav_gnb {
-        position: relative;
-        top: 0;
-        left: 0;
-        bottom: 0;
         z-index: 3000;
         display: inline-block;
-        width: 10%;
+        width: 0%;
         height: 100%;
         background-color: rgba(4, 4, 4, 0.9);
     }
@@ -309,52 +37,331 @@
         font-size: 35px;
         font-weight: bold;
     }
-    /*                                 global_menu                                 */
-    /*                                                                      gnb                                                                    */
+/*            navGnb        end                                                                   */ 
+
+
+
+
+
+/*            login_pop                                                                               */   
+    .login_pop {
+        position: fixed;
+        top: 30%;
+        right: 50%;
+        z-index: 3000;
+        
+        display: none;
+        width: 40%;
+        height: 50%;
+        transform: translate(50%, -35%);
+        background-color: rgba(210, 210, 210, 0.8);
+        border-radius: 2%;
+    }
+    .close_login_btn {
+        position: absolute;
+        right: 2%;
+        top: 2%;
+
+        display: inline;
+        margin: 0;
+        padding: 0;
+        border: rgba(0, 0, 0, 0) 0;
+        background-color: rgba(0, 0, 0, 0);
+
+        font-size: 35px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .log_in_area {
+        position: absolute;
+        top:30%;
+        left:50%;
+        transform: translate(-50%, 10%);
+
+        display: inline-block;
+        width:40%;
+        height: 10%;
+    }
+    .id_box {
+        position: relative;
+        top: 0;
+        
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+    .pwd_box {
+        position: relative;
+        top: 15%;
+        
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+    .login_submit {    
+        position: relative;
+        top:25%;
+        
+        display: block;
+        width: 70%;
+        height: 54%;
+        margin: auto;
+    }
+    .open_login_pop {
+        display: inline-block;
+    }
+/*            login_pop        end                                                                   */   
+
+
+
+
+
+/*             background_effect                                                               */
+    .background_effect {
+        position: absolute;
+        z-index: 2000;
+
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(circle farthest-corner at bottom, transparent, rgb(4 4 4 / 15%));
+    }
+    .active_background_effect {
+        display: inline-block;
+    }
+/*             background_effect             end                                                 */
+
+
+
+
+
+
+/*            navSnb                                                                                 */
+    #navSnb {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+    }
+ /*             navSnb                   end                                                      */   
+
+
+
+
+
+
+    #wrapper {
+        position: relative;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 100vw;
+        max-width: 1920px;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+
+/*             header                                                                                   */
+    #header {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: inline-block;
+        width: 100%;
+        height: 10.307%;
+    }
+  
+    #trigger_area button {
+        padding: 0;
+        margin: 0;
+        border-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #trigger_area {
+        position: absolute;
+        z-index: 2000;
+
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .trigger_logo_area {
+        position: absolute;
+        left: 6.40625%;
+        top: 37.313%;
+    }
+    .trigger_logo_link {
+        position: absolute;
+        
+        display: block;
+        width: 136px;
+        height: 34px;
+    }
+    .trigger_logo_area img {
+        width: 136px;
+        height: 34px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .trigger_character_area {
+        position: fixed;
+        top: 68%;
+        right: 16%;
+
+        display: inline;
+    }
+    .trigger_character {
+        position: relative;
+        z-index: 2000;
+
+        background-image: url("image/logo_square.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 75px;
+        height: 72px;
+        cursor:pointer;
+    }
     
+    .gnb {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .open_menu_btn {
+        position: fixed;
+        left: 3.3%;
+        top: 4.2%;
+        z-index: 2000;
+        display: inline-block;
+        width: 1.927%;
+        padding: 0;
+        border: rgba(0, 0, 0, 0) 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .btn_shape {
+        position: relative;
+        left: 0;
+        display: block;
+        box-sizing: border-box;
+        height: 5px;
+        margin: 5px;
+        border: rgba(63, 63, 63, 0.8) 2px solid;
+        border-radius: 20%;
+        background-color: rgba(63, 63, 63, 0.8);
+    }
+    
+    .service_area {
+        position: relative; top: 30.918%;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 82.1%;
+    }
+    .service_area a {
+        position: relative;
+        z-index: 2000;
+        left: 28.6%;
+        margin-right: 8.95%;
+        
+        opacity: 1;
+        
+        text-decoration: none;
+        text-align: left;
+        font-family: Myriad pro;
+        font-size: 18px;
+        letter-spacing: 0.79px;
+        color: #262626;
+    }   
+    
+    .link_bar {}
+    .link_brand {}
+    .link_upcomming {}
+    .link_atelier {}
+    .service_area a::before {
+        content: "";
+        position: absolute;
+        top: -30%;
+        right:130%;
+        display: inline-block;
+        box-sizing: border-box;
+        height: 30px;
+        border: 1px solid #707070;
+    }
+    
+    .login_btn {
+        position: absolute;
+        right: 10.8854%;
+        z-index: 2000;
+        
+        width: 30px;
+        height: 30px;
+        border: rgba(0, 0, 0, 0) 0;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url(./image/user.png);
+        background-size: cover;
+        cursor: pointer;
+        
+        font-family: Myriad pro;
+        font-size: 18px;
+        color: rgb(63, 63, 63);
+    }
+/*             header                   end                                                                 */
+
+/*             container                                                                                     */
     #container {
         position: relative;
         top: 10.307%;
-        /*중요*/
         left: 0;
         right: 0;
         display: inline-block;
         width: 100%;
         height: 93%;
-        /*컨테이너 크기*/
+
         overflow-x:hidden;
         overflow-y: auto;
     }
-    
-    #footer {
-        position: relative;
-        top: 10.307%;
-        left: 0;
-        right: 0;
-        display: inline-block;
-        width: 100%;
-        height: 7.7%;
-    }
-    
-    #phaise1 {
+
+    .box {
         position: absolute;
-        z-index: 1;
-        background-color: white;
-        /*겹치는 순간 페이즈 2 위에 위치하기 위함*/
+        z-index: 1000;
+
+        background: url('image/texture2.png');
+        width: 100%;
+        height: 30px;
+        box-shadow: 0px 3px 5px #00000029;
+        opacity: 0.3;
     }
-    
-    #phaise2 {
-        position: relative;
+    .box_top {
+        top: 0;
     }
-    
+    .box_bottom {
+        top: 74.538%;
+    }
+
+
+
     .phaise {
         left: 0;
         display: inline-block;
         width: 100%;
         height: 100%;
     }
-    /*                                 banner                                 */
-    
+
+    #phaise1 {
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        /*겹치는 순간 페이즈 2 위에 위치하기 위함*/
+    }
     .spot {
         position: relative;
         top: 7.975%;
@@ -363,7 +370,6 @@
         height: 63.7%;
         overflow: hidden;
     }
-    
     .banner_box {
         position: relative;
         display: block;
@@ -372,9 +378,8 @@
         height: 100%;
         overflow: hidden;
         white-space: nowrap;
-        background-color: aliceblue;
+        background-color: white;
     }
-    
     .banner_image_box {
         position: relative;
         top: 0;
@@ -416,6 +421,9 @@
         visibility: visible;
         opacity: 1;
     }
+    .slide img {
+        height: 100%;
+    }
     .slide_link {
         position: absolute;
         top:0;
@@ -424,10 +432,6 @@
         display: inline-block;
         height: 100%;
         width:100%;
-    }
-
-    .slide img {
-        height: 100%;
     }
     
     .banner_text_box {
@@ -444,42 +448,219 @@
         transition-duration: 2s;
     }
     .banner_blur {
+        background-image: url(image/text_background.png);
         width: 100%;
         height: 100%;
         backdrop-filter: blur(26px);
-        background-image: url(image/text_background.png);
     }
-    
     .banner_text {
         position: absolute;
+
         width: 100%;
         height: 100%;
         padding-top: 9vh;
         padding-left: 9vh;
         box-sizing: border-box;
+
         font-size: x-large;
     }
+                        
 
-    /*                                 banner                                 */
-    /*                                 carousel                                                                               */
-    
-
-    /*                                 carousel                                                                               */
-    
+    #phaise2 {
+        position: relative;
+    }
     .phaise_2 {
         display: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .main_carousel_box {
+        position: relative;
+        top: 7.975%;
+
+        display: inline-block;
+        width: 100%;
+        height: 679px;
+    }
+    .main_carousel_box .move_btn {
+        position: absolute;
+        top:50%;
+        z-index: 3000;
+        font-size: 7em;
+        transform: translate(0, -50%);
+    }
+    .main_carousel_box i {
+        width: 100px;
+ 
+    }
+
+    .main_carousel_box .left_btn {
+        left:2%;
+    }
+    .main_carousel_box .right_btn {
+        right: 2%;
+    }
+    .category_carousel {
+        position: relative;
+        top: 50%;
+        left: 50%;
+
+        display: inline-block;
+        height: 500px;
+        width: 1672px;
+        background-color: whitesmoke;
+        transform: translate(-50%, -50%);
+        transition-property: all;
+        transition-duration: 0.2s;
     }
     
+    .carousel {
+        position: static;
+
+        left: -598px;    /*  Key*/
+
+        display: block;
+        height: 123%;
+        width: 100%;
+
+        white-space: nowrap; /*개행 X */
+
+        font-size: 0;
+
+        overflow:hidden ;
+        transition:inherit;
+        
+    }
+
+    .card {
+        position: relative;
+        top:50%;
+        left:inherit;
+        z-index: 3000;
+
+
+        display: inline-block; /*개행 X*/
+        height: 500px;
+        width: 340px;
+        margin-right: 58px;
+        transform: translateY(-50%);
+        transition:inherit;
+        
+    }
+    .carousel_slide img {
+        border:0;
+    }
+    .card_link {
+        position: absolute;
+        top:0;
+        left:0;
+
+        display: inline-block;
+        height: 100%;
+        width:100%;
+    }
+    .card {
+        opacity: 0.4;
+        display: none;
+    }
+    .center_card {
+        width:420px;
+        height: 617.65px;
+ 
+        
+    }
+
+    .card_minus_3 {
+        background-color: blue;
+    }
+ 
+    .card_minus_2 {
+        background-color: darkblue;
+    }
+ 
+    .card_minus_1 {
+        background-color: purple;
+    }
+ 
+    .card_0 {
+        background-color: red;
+    }
+ 
+    .card_1 {
+        background-color: orange;
+    }
+ 
+    .card_2 {
+        background-color: yellow;
+    }
+ 
+    .card_3 {
+        background-color: green;
+    }
+ 
+    .card_4 {
+        background-color: blue;
+    }
+ 
+    .card_5 {
+        background-color: darkblue;
+    }
+ 
+    .card_6 {
+        background-color: purple;
+    }
+ 
+    .card_7 {
+        background-color: red;
+    }
+ 
+    .card_8 {
+        background-color: orange;
+    }
+ 
+    .card_9 {
+        background-color: yellow;
+    }
+    .card_10 {
+        background-color: green;
+    }
+ 
+    .active_card {
+        display: inline-block;
+    }
+
+    #wrapper, #container, .phaise_2  {
+        overflow:initial;
+    }
+/*             container                end                                                             */
+
+
+/*                                        footer                                                            */
+       #footer {
+           position: relative;
+           top: 10.307%;
+           left: 0;
+           right: 0;
+           display: inline-block;
+           width: 100%;
+           height: 7.7%;
+       }
+ /*                                         footer end                                                     */
+
+
+
+/*             keyframes                                                                                   */
+
+    /*             캐릭터 클릭 이벤트                                                         */
     .write_phaise_2 {
         display: inline-block;
     }
-    
     .move_phaise_1 {
         animation-name: MovePhaise_1;
         animation-duration: 2s;
         animation-fill-mode: forwards;
     }
-    
     @keyframes MovePhaise_1 {
         from {
             left: 0;
@@ -488,13 +669,15 @@
             left: -100%;
         }
     }
-    
+    .erase_phaise_1 {
+        display: none;
+    }
+
     .hide_character {
         animation-name: HideCharacter;
         animation-duration: 2s;
         animation-fill-mode: forwards;
     }
-    
     @keyframes HideCharacter {
         from {
             opacity: 1;
@@ -507,31 +690,21 @@
             right:16%;
         }
     }
-    
     .erase_character {
         display: none;
     }
+    /*             캐릭터 클릭 이벤트 end                                                    */
     
-    .erase_phaise_1 {
-        display: none;
-    }
-   
-    /*의미상 구분을 확실히 하기 위해 paint와 write, hide와 erase 로 구분하였음.*/
-    
-    .nav_gnb {
-        width: 0%;
-    }
-    
+    /*             좌측 상단  메뉴 애니메이션                                              */
+
     .hide_open_menu_btn {
         display: none;
     }
-    
     .open_menu {
         animation-name: OpenMenu;
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
     }
-    
     @keyframes OpenMenu {
         from {
             width: 0%;
@@ -546,7 +719,6 @@
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
     }
-    
     @keyframes CloseMenu {
         from {
             width: 10%;
@@ -555,27 +727,19 @@
             width: 0%;
         }
     }
-    
-
-    /*                                 banner                                 */
+    /*             좌측 상단  메뉴 애니메이션       end                                  */
 
 
-@keyframes ActiveSlide {
-    from {
-        z-index:199;
-    }
-    to {
-        z-index: 200;
-    }
-}
-
-
-
-    /*                                 banner                                 */
+/*             keyframes   end                                                                        */
 
 
 
 
+
+
+/*             media query                                                                             */
+
+    /*                            1920X1080 초과 시                                               */
     @media screen and (min-width: 1921px) {
         #wrapper {
             display: block;
@@ -587,7 +751,6 @@
             top:734.391px;
         }
     }
-    
     @media screen and (min-height: 1081px) {
         .trigger_character_area {
             position: absolute;
@@ -598,22 +761,24 @@
             height: 678.625px;
             top:84.953px;
         }
-        .box_top{
-            top:24.563px;
-        }
+
         .box_bottom{
-            top:794.094px;
+            top:748.641px;
+        }
+        .main_carousel_box{
+            top:80.094px;
+            height:679px;
         }
     }
+    /*                          1920X1080 초과 시   end                                  */
 
-    /**/
-
+    /*                  Iphone 12 pro max 기준                                           */
     @media screen and (max-height:428.1px) {
 
     }
     @media screen and (max-width:296.1px) {
 
     }
+    /*                  Iphone 12 pro max 기준     ecd                                */
 
-
-    /**/
+/*             media query        end                                                              */
