@@ -108,7 +108,8 @@ function afafter(){
     rightMoveBtn.addEventListener("click", clickRight);
 }
 
-function clickLeft() {
+function clickLeft(event) {
+    event.preventDefault();
     leftMoveBtn.removeEventListener("click", clickLeft);
     rightMoveBtn.removeEventListener("click", clickRight);
 
@@ -159,12 +160,13 @@ function bebefore () {
 
     carouselState +=398;
     carousel.style.left = carouselState +"px";
-    cardArr[centerIndex-3].classList.remove("active_card");
+    cardArr[centerIndex-4].classList.remove("active_card");
 
     leftMoveBtn.addEventListener("click", clickLeft);
     rightMoveBtn.addEventListener("click", clickRight);
 }
-function clickRight() {
+function clickRight(event) {
+    event.preventDefault();
     leftMoveBtn.removeEventListener("click", clickLeft);
     rightMoveBtn.removeEventListener("click", clickRight);
 
@@ -183,13 +185,13 @@ function clickRight() {
     else {
         carouselState -=398;
         carousel.style.left = carouselState +"px";
-
+        
         cardArr[centerIndex].classList.remove("center_card");
-        cardArr[centerIndex+1].classList.add("center_card");
+        centerIndex += 1;
+        cardArr[centerIndex].classList.add("center_card");
         cardArr[centerIndex+3].classList.add("active_card");
         
         setTimeout(bebefore, 300); // 함수가 실행되는 시기는 밑의 결과가 적용된 후이므로 +1된 채로 적용됨.
-        centerIndex += 1;
     }
 }
 
